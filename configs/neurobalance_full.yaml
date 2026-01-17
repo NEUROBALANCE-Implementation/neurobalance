@@ -1,0 +1,22 @@
+seed: 42
+deterministic: true
+
+model:
+  name: llava_next
+  backbone: vicuna-7b
+
+training:
+  batch_size: 32
+  grad_accum: 4
+  lr: 5e-5
+
+neurobalance:
+  gating:
+    enabled: true
+    target_density: 0.15
+  attention:
+    enabled: true
+    beta: 1.5
+  injection:
+    enabled: true
+    gamma: 0.5

@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+
+# packaging
+*.egg-info/
+dist/
+build/
+
+# outputs/checkpoints
+results/
+*.pt
+*.pth
+
+# OS
+Thumbs.db
+.DS_Store
