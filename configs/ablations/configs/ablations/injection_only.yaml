@@ -10,16 +10,16 @@ training:
   grad_accum: 4
   lr: 5e-5
 
-# ✅ Ablation: ONLY adaptive attention enabled
+# ✅ Ablation: ONLY knowledge injection enabled
 neurobalance:
   gating:
     enabled: false
     target_density: 0.15
 
   attention:
-    enabled: true
-    beta: 1.5
+    enabled: false
+    beta: 1.0
 
   injection:
-    enabled: false
-    gamma: 0.0
+    enabled: true
+    gamma: 0.5
